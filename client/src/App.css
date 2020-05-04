@@ -1,0 +1,107 @@
+body{
+  margin:0;
+  padding:0;
+}
+body::before{
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.pexels.com/photos/3551216/pexels-photo-3551216.jpeg?cs=srgb&dl=lumineux-leger-soleil-couchant-coucher-de-soleil-3551216.jpg&fm=jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.contact-from{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 25%);
+  -moz-transform: translate(-50%, 25%);
+  -ms-transform: translate(-50%, 25%);
+  -o-transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%);
+  width: 1000px;
+  height: auto;
+  padding: 10px 0px;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+}
+.avatar{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  top: calc(-80px/2);
+  left: calc(50%-40px);
+}
+.contact{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 15%);
+  -moz-transform: translate(-50%, 15%);
+  -ms-transform: translate(-50%, 15%);
+  -o-transform: translate(-50%, 15%);
+  transform: translate(-50%, 15%);
+  width: 1000px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add-btn{
+  background-color: transparent;
+  width: 220px;
+  border: 2px solid dark;
+  height: 360px;
+  font-size: 50px;
+  color: black;
+  margin: 52px 78px;
+}
+.add-btn:hover{
+  background-color: black;
+  border-color: transparent;
+}
+.card-contact{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 220px;
+  height: 360px;
+  color: black;
+  margin: 52px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+  padding: 10px;
+}
+.user{
+  width: 80px;
+  height: 80px;
+}
+.btnn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-contact:hover{
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  cursor: pointer;
+}
+.card-contact:hover .btn:hover{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.modal-form
+{
+  display: flex;
+  flex-direction: column;
+}
